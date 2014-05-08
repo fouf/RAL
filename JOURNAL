@@ -1,0 +1,76 @@
+January 10th, 2011
+--------------------------------------------
+->The idea for my project, RAL - Rapidly Adapting Lifeforms, sprung about. After brainstorming for a while, I refined the idea to attempt
+and replicate a small colony of tiny pixels that expand and fight off any prey and survive by managing nearby resources.
+
+-> Worked on the SDL environment in C, so far things are looking good, tomorrow I hopefully start some of the more "simulating" parts of the project.
+
+January 11th, 2011
+--------------------------------------------
+-> Worked on a lot of the idea behind the project, set up lots of structs to hold neccessary data for simulation
+
+Feburary 8th, 2011
+--------------------------------------------
+-> I have been questioning my idea while refining my coding environment for the past month. I have concluded that it will still be a simulation,
+but rather a predator/prey model, and relate it to real-world equations that measure populations.
+I believe that a computer simulatued predator prey enviorment will be very similar to real world equations used today.
+->At the moment I have a grid that will be used as the "field" for the simulation, different colored dots will repersent the predators and preys. 
+I will hopefully have running statistics and variables that you can change to watch the effect that is has on the screen.
+The field will be toroidal, meaning that the top and bottom are connected, and the left and right sides are also connected with each other.
+
+Feburary 10th, 2011
+---------------------------------------------
+-> I have been looking at the idea of cellular automaton(CA). I am quite interested in the topic.. I'm going to take some time to study both of the ideas 
+and then choose a path. Both Cellular autoamton and a grid based predator/prey simulator share my grid environment set up currently.. 
+I just have to choose which I will make my project. Cellular automaton looks quite fun to do as I already have a demo of it working in my C/SDL environment...
+
+Feburary 14th, 2011
+---------------------------------------------
+-> I have chosen my project to be about cellular automaton (Conway's Game of Life). I have been working on it for a while now, and it is looking good so far. Currently I am making it more efficient
+and I am taking time to learn the hashlife algorithm, and implement in my application to quickly generate very old life patterns. It seems like a very complex but rewarding
+process, both as something interesting to learn and attempt to implement and a way to help benefit my project.
+I did not choose to do the predator/prey or my very first idea of adapting lifeforms for I saw this as a little more unique than the others, and more intriguing.
+I already have it somewhat working, it is pretty good so far, doing about 60 generations a second... this should be greatly increased with the hashlife algorithm and
+futhering tinkering on my half.
+I am going to relate my cellular automaton project on how it can help us understand life. Cellular automaton can help us learn how cells divide. It is very amazing how 
+a bit of cells placed in the Game of Life can turn into an amazingly abstract collection of cells. This game of life lets us observe at first hand and under a set of known
+rules observe patterns.
+
+Feburary 18th, 2011
+---------------------------------------------
+-> I've continued my work on the project.. currently I'm working on implementing the hash life algorithm. This will GREATLY increase the speed of the program, and allow me
+to generate generations in the billions to see how complex configurations become. I'm also adding the ability to add pre-set
+configurations to the application, so you can click and place a glider in a single motion, or some even more advanced.
+I'm currently happy with my progress, and can't wait for this to be complete. I've also tinkered with the efficieny, it works better
+than ever now.
+I'll keep tackling these for now, and then I will maybe add a toolbar instead of the configuration box instead.
+
+Feburary 25th, 2011
+---------------------------------------------
+-> I've reverted back to my idea of a predator versus prey model. I have found that I would enjoy doing that more, and it makes more sense for me to do that, rather than
+just an implemation of cellular automaton.
+Currently working on transition, should not be to much of a problem as they both us a grid like system.
+
+March 1st, 2011
+---------------------------------------------
+The predator prey simulation is work as planned, it took me a while but I have it so it successfully checks the neighbours of each of the cells correctly, it is really
+starting to turn out nice. I'm having trouble implementing the starve and breed factors to some of the cells, I will continue working towards that, I'm hoping to have it
+so you can dynamical change these values during the simulation as to get a better feel of how the varibles directly affect the simulation.
+
+March 15th, 2011
+---------------------------------------------
+I've been having trouble implementing the graph, it would work but cause problems after running for so long.. I've had to transition and implement the graph different,
+it is now appended to the bottom of the screen instead of being its own window, I think it looks better now, before it looks pretty bad. I'm happy with how it is
+working so far, I've added a little status menu at the bottom.
+
+March 22nd, 2011
+---------------------------------------------
+I have finally got the cell's breed and rate values set up to sliders in the configuration box. Now you can change them during runtime and watch what happens to
+the system as you change the bars. I really enjoy watching the simulation run now, it seems quick fast and the predators and preys look nice. At the moment I'm
+tinkering with the colors, hopefully I'll choose some good ones.
+
+March 26th, 2011
+---------------------------------------------
+The project is due soon and I've been working on my board and polishing up my project, I had a bug earlier where the graph wasn't working properly but that has been fixed
+(phew). Hopefully my project is in good enough shape to be presented, I'm really worried about my board at the moment as I don't have a printer, hopefully I can get all
+of this printed with time to put it together. Anyway, I won't be typing in here anymore until after regionals. Woo.
